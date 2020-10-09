@@ -112,6 +112,11 @@ li{
     margin-top: 33px;
 
 }
+.box p{
+    font-family: sans-serif;
+    color: white;
+    
+}
 .box #main_question{
     margin-left: 60px;
     margin-top: 15px;
@@ -129,6 +134,14 @@ li{
     display: flex;
     flex-direction: column;
 }
+.box input[type = "checkbox"]{
+    border: 0;
+    display: block;
+    background: none;
+    outline: none;
+    margin-left: 105px;
+}
+
 
 .box #Submit_poll_div{
     position: absolute;
@@ -159,6 +172,8 @@ li{
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
     color: black;
+    border: 2px solid#00b386;
+    box-shadow: 1px 2px 5px #1a1a1a;
 
 }
 .box input[type = "text"]:hover{
@@ -180,6 +195,7 @@ li{
     text-transform: uppercase;
     font-weight: 10;
 }
+
 .box input[type = "submit"]:hover{
     background-color: #cccccc;
     border: 2px solid #00b386;

@@ -26,19 +26,27 @@
 </header>
 <main>
     
-    <form class="box" action="index.html" method="post">
+    <form class="box" action="pollcreated.html" method="post">
         
         <h1>Form</h1>
         <input type="text" name="" id="main_question" placeholder="Question">
         
         <div id="Options">
+            
         <input type="text" name="" class="option" placeholder="Option #1">
+        <input type="checkbox" name="checkbox" id="checkbox1">
         <input type="text" name="" class="option" placeholder="Option #2">
+        <input type="checkbox" name="checkbox" id="checkbox2">
         <input type="text" name="" class="option" placeholder="Option #3">
+        <input type="checkbox" name="checkbox" id="checkbox3">
         <input type="text" name="" class="option" placeholder="Option #4">
+        <input type="checkbox" name="checkbox" id="checkbox4">
         </div>
         <div id="Submit_poll_div">
-        <input type="submit" name="" id="submit_poll" value="Submit">
+        <p>Check one or more boxes for the correct answer</p>
+        
+            <input type="submit" name="" onclick="getInformation()" id="submit_poll" value="Create Poll">
+        
     </div>
 
 
