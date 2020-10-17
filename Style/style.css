@@ -1,5 +1,13 @@
+html{
+    
+}
 body {
     background-color: rgba(20, 20, 20, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 header{
@@ -11,7 +19,27 @@ header{
     margin-top: -8px;
     margin-left: -8px;
     box-shadow: 5px 5px 5px black;
+    width: 101%;
     
+}
+header a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 7px;
+    margin-right: 20px;
+    background: none;
+    transition: 0.25s;
+    padding: 5px;
+}
+header a:hover{
+    background-color: rgba(15, 15, 15, 0.2);
+    box-shadow: 2px 2px 2px black;
 }
 
 #menyklikk{
@@ -72,7 +100,8 @@ header{
     margin: -120px 0 0 -75px;
     padding: 40px;
     padding-top: 125px;
-    background-color: whitesmoke;
+    background-color: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(20px);
     transform-origin: 0% 0%;
     transform: translate(0, -100%);
     
@@ -89,7 +118,7 @@ li{
 #menyklikk input:checked~ul{
     transform: none;
 }
-.box{
+.main_box, .box{
     width: 850px;
     min-height: 500px;
     padding: 40px;
@@ -105,25 +134,25 @@ li{
     flex-flow: row wrap;    
 }
 
-.box h1{
+h1{
     font-family: sans-serif;
     text-transform: uppercase;
     color: white;
     margin-top: 33px;
 
 }
-.box p{
+.main_box, .box p{
     font-family: sans-serif;
     color: white;
     
 }
-.box #main_question{
+.main_box, .box #main_question{
     margin-left: 60px;
     margin-top: 15px;
     height: 40px;
     width: 600px;
 }
-.box .option{
+.main_box, .box .option{
     width: 200px;
     height: 35px;
     margin: 10px;
@@ -134,7 +163,7 @@ li{
     display: flex;
     flex-direction: column;
 }
-.box input[type = "checkbox"]{
+.boxinput[type = "checkbox"]{
     border: 0;
     display: block;
     background: none;
@@ -159,7 +188,7 @@ li{
     display: block;
     margin: 10px auto;
     text-align: center;
-    border: 2px solid #0099cc;
+    border: 3px solid #0099cc;
     padding: 14px 10px;
     outline: none;
     color: white;
@@ -170,14 +199,13 @@ li{
 .box input[type = "text"]:focus{
     width: 200%;
     background-color: #f2f2f2;
-    border: 2px solid #f2f2f2;
     color: black;
-    border: 2px solid#00b386;
+    border: 3px solid#00b386;
     box-shadow: 1px 2px 5px #1a1a1a;
 
 }
 .box input[type = "text"]:hover{
-    border: 2px solid#00b386;
+    border: 3px solid#00b386;
     box-shadow: 1px 2px 5px #1a1a1a;
 }
 
@@ -186,7 +214,7 @@ li{
     display: block;
     margin: 10px auto;
     text-align: center;
-    border: 2px solid #0099cc;
+    border: 3px solid #0099cc;
     padding: 14px 10px;
     outline: none;
     color: white;
@@ -198,7 +226,7 @@ li{
 
 .box input[type = "submit"]:hover{
     background-color: #cccccc;
-    border: 2px solid #00b386;
+    border: 3px solid #00b386;
     color: black;
     
 
